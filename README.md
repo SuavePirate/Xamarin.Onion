@@ -33,6 +33,7 @@ This error can happen when one of the Xamarin.Forms projects has issues updating
 
 ## Contributing
 Pull Requests are checked bi-daily. Some of the main focuses for next steps are:
+
 1. Creating more templates for Xamarin Native projects
 2. Creating more templates for Xamarin projects that include wearables
 3. Creating more templates for Xamarin projects that include Xamarin.Mac projects as well as other .NET projects
