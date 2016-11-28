@@ -1,0 +1,63 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Xamarin Forms Scalable Project</Name>
+    <Description>An initial set up of a Xamarin.Forms Project with an Onion Architecture</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>false</CreateNewFolder>
+    <DefaultName>MyOnionProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <SolutionFolder Name="01 - Domain">
+        <ProjectTemplateLink ProjectName="$projectname$.Domain.Models">
+          OnionTemplate\OnionTemplate.Domain.Models\OnionTemplate.Domain.Models.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$projectname$.Domain.Interfaces">
+          OnionTemplate\OnionTemplate.Domain.Interfaces\OnionTemplate.Domain.Interfaces.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="02 - Application">
+        <ProjectTemplateLink ProjectName="$projectname$.Application.Models">
+          OnionTemplate\OnionTemplate.Application.Models\OnionTemplate.Application.Models.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$projectname$.Application.Interfaces">
+          OnionTemplate\OnionTemplate.Application.Interfaces\OnionTemplate.Application.Interfaces.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="03 - Infrastructure">
+        <ProjectTemplateLink ProjectName="$projectname$.Infrastructure.Data">
+          OnionTemplate\OnionTemplate.Infrastructure.Data\OnionTemplate.Infrastructure.Data.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$projectname$.Infrastructure.Business">
+          OnionTemplate\OnionTemplate.Infrastructure.Business\OnionTemplate.Infrastructure.Business.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="04 - Clients">
+        <ProjectTemplateLink ProjectName="$projectname$">
+          OnionTemplate\OnionTemplate\OnionTemplate.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$projectname$.Controls">
+          OnionTemplate\OnionTemplate.Controls\OnionTemplate.Controls.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="05 - Platforms">
+        <ProjectTemplateLink ProjectName="$projectname$.Droid">
+          OnionTemplate\Droid\OnionTemplate.Droid.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$projectname$.iOS">
+          OnionTemplate\iOS\OnionTemplate.iOS.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$projectname$.UWP">
+          OnionTemplate\OnionTemplate.UWP\OnionTemplate.UWP.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

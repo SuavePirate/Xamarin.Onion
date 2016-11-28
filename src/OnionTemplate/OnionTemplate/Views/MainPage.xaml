@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="OnionTemplate.MainPage"
+		BindingContext="{Binding Source={StaticResource Locator}, Path=Main}"
+    Title="{Binding Title}">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+			<Label Text="{Binding BodyTitle}"/>
+			<Label Text="{Binding BodyText}"/>
+      <ActivityIndicator IsRunning="True" IsVisible="{Binding IsLoading}"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

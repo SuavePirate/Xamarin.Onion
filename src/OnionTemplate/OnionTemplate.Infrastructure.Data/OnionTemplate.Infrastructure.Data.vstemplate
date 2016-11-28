@@ -1,0 +1,41 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>OnionTemplate.Infrastructure.Data</Name>
+    <Description>PCL Infrastructure Data</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>OnionTemplate.Infrastructure.Data</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="OnionTemplate.Infrastructure.Data.csproj" File="OnionTemplate.Infrastructure.Data.csproj" ReplaceParameters="true">
+      <Folder Name="DataProviders" TargetFolderName="DataProviders">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AzureStorageDataProvider.cs">AzureStorageDataProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GenericDataProvider.cs">GenericDataProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UserDataProvider.cs">UserDataProvider.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+      <Folder Name="Repositories" TargetFolderName="Repositories">
+        <ProjectItem ReplaceParameters="true" TargetFileName="GenericFileStorageRepository.cs">GenericFileStorageRepository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GenericMemoryRepository.cs">GenericMemoryRepository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GenericSqlLiteRepository.cs">GenericSqlLiteRepository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UserRepository.cs">UserRepository.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Stores" TargetFolderName="Stores">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseStore.cs">BaseStore.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StoreManager.cs">StoreManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UserStore.cs">UserStore.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

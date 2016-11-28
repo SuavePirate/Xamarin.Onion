@@ -1,0 +1,41 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>OnionTemplate.Domain.Interfaces</Name>
+    <Description>PCL Domain Interfaces</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>OnionTemplate.Domain.Interfaces</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="OnionTemplate.Domain.Interfaces.csproj" File="OnionTemplate.Domain.Interfaces.csproj" ReplaceParameters="true">
+      <Folder Name="DataProviders" TargetFolderName="DataProviders">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ICloudStorageProvider.cs">ICloudStorageProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IGenericDataProvider.cs">IGenericDataProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IUserDataProvider.cs">IUserDataProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+      <Folder Name="Repositories" TargetFolderName="Repositories">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IGenericRepository.cs">IGenericRepository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IUserRepository.cs">IUserRepository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+      </Folder>
+      <Folder Name="Stores" TargetFolderName="Stores">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IGenericStore.cs">IGenericStore.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IStoreManager.cs">IStoreManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IUserStore.cs">IUserStore.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,39 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>OnionTemplate.Application.Models</Name>
+    <Description>PCL Application Models</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>OnionTemplate.Application.Models</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="OnionTemplate.Application.Models.csproj" File="OnionTemplate.Application.Models.csproj" ReplaceParameters="true">
+      <Folder Name="Enums" TargetFolderName="Enums">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ResultType.cs">ResultType.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Extensions" TargetFolderName="Extensions">
+        <ProjectItem ReplaceParameters="true" TargetFileName="UserExtensions.cs">UserExtensions.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Input" TargetFolderName="Input">
+        <ProjectItem ReplaceParameters="true" TargetFileName="NewUser.cs">NewUser.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Output" TargetFolderName="Output">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Result.cs">Result.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+      <Folder Name="Transfer" TargetFolderName="Transfer">
+        <ProjectItem ReplaceParameters="true" TargetFileName="UserTransferObject.cs">UserTransferObject.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

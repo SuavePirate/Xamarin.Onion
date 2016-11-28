@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{982D000B-90E7-48D1-BEF1-6A1CA98159B1}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UseMSBuildEngine>true</UseMSBuildEngine>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OnionTemplate.Infrastructure.Business</RootNamespace>
+    <AssemblyName>OnionTemplate.Infrastructure.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\BaseService.cs" />
+    <Compile Include="Services\UserService.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OnionTemplate.Domain.Interfaces\OnionTemplate.Domain.Interfaces.csproj">
+      <Project>{7EFEFAD2-471A-4197-93F1-628BB7A453FC}</Project>
+      <Name>OnionTemplate.Domain.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnionTemplate.Domain.Models\OnionTemplate.Domain.Models.csproj">
+      <Project>{5437E751-7B7B-4C76-B04E-8D1802916C9C}</Project>
+      <Name>OnionTemplate.Domain.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnionTemplate.Application.Models\OnionTemplate.Application.Models.csproj">
+      <Project>{B472E84F-BA59-40E8-9D1C-C2730AB3FD04}</Project>
+      <Name>OnionTemplate.Application.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnionTemplate.Application.Interfaces\OnionTemplate.Application.Interfaces.csproj">
+      <Project>{ABDC0B61-4BCC-49D1-A82E-15EA1B2F8EBE}</Project>
+      <Name>OnionTemplate.Application.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>
