@@ -24,9 +24,23 @@ This is where the actual Visual Studio Templates exist
 
 ### Resolving Issues
 
-#### VS not responding after clicking on Create New Project
+#### 1. VS not responding after clicking on Create New Project
 Because you've added a large template to your VS installation, it needs to initialize these in order for them to be usable. After a template is initialized, it is cached and this process will be quicker. Just give it some time.
 
-#### `Error Build action 'EmbeddedResource' is not supported by one or more of the project's targets`
+#### 2. `Error Build action 'EmbeddedResource' is not supported by one or more of the project's targets`
 
 This error can happen when one of the Xamarin.Forms projects has issues updating from its nuget packages. Do a Clean, then Restore Nuget Packages, then try again.
+
+## Contributing
+Pull Requests are checked bi-daily. Some of the main focuses for next steps are:
+1. Creating more templates for Xamarin Native projects
+2. Creating more templates for Xamarin projects that include wearables
+3. Creating more templates for Xamarin projects that include Xamarin.Mac projects as well as other .NET projects
+4. Creating more templates that include all possible mobile/desktop application projects
+5. Updating documentation
+6. Creating more rich example projects
+
+## More information
+For details on the project structure, check out the `README`'s in the `src` projects. They go into more details about the roles of each project and the source as a whole.
+
+
